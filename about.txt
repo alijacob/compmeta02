@@ -1,0 +1,62 @@
+copied from domn37, there the "Compound field successfully loaded" message was shown. 
+
+copied from compfield, and added JavaScript
+
+sidebar_Category (Dropdown field)
+
+the new compound field
+
+Span Text
+Sidebar Title - (Autocomplete from title)
+Description - 
+card_title - (Autocomplete from title)
+card_description - (Autocomplete from Description)
+Exp Lvl
+Title- fully Autocomplete
+Thumb Url - Fully Autocomplete, from JavaScript
+Article URL - fully Autocomplete with url from URL field
+Topic Id - Autocomplete from sidebar_Category complete
+parent_topic - Autocomplete on sidebar_Category
+sub_topic - Autocomplete on sidebar_Category
+
+compfield for card and meta generation(article, sub topic page)
+Created for -(parent topic, sub topic, unlisted) - only meta generation. 
+
+for meta generation
+<title>Contact us - swapreference.com</title>
+<meta name="description" content="Contact swapreference. Reach out to swapreference for suggestions, advertisement, legal or other specific purposes" />
+<meta name="keywords" content="Contact Swapreference, Reach out to Swapreference, Swapreference social contact">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:standard, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:standard, max-video-preview:-1" />
+<link rel="canonical" href="https://www.swapreference.com/contact-us/" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Contact us - swapreference.com"/>
+<meta property="og:description" content="Conatct swapreference, reach out to us for suggestions, how we can improve, for legal or other purposes." />
+<meta property="og:url" content="https://www.swapreference.com/contact-us/" />
+<meta property="og:site_name" content="swapreference.com" />
+<meta property="article:publisher" content="https://www.facebook.com/Swapreference" />
+<meta property="article:published_time" content="2020-06-16T08:06:51+05:30" />
+<meta property="article:modified_time" content="2020-06-16T08:06:55+05:30" />
+<meta property="og:image" content="https://www.swapreference.com/wp-content/uploads/2020/06/websiteicon16-1.png" />
+<meta property="og:image:width" content="450" />
+<meta property="og:image:height" content="225" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Contact ©swapreference.com, reach out to us for suggestions, for legal or other specific purposes" />
+<meta name="twitter:creator" content="@swapreference" />
+
+//title is provided by Drupal so no need to place title. 
+
+for meta generation - required(description, url, title, $created_time, $updated_time, $thumb_url)
+
+title is not required - 
+
+required - description, node_url, node_title, thumb_url, created_time, updated_time, out of six - only four required, 
+
+created_time, and updated_time are fetched with insert or update hook
+ - node_title
+ - node_url
+ - desciption
+ - thumb_url

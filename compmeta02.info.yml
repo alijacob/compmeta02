@@ -1,0 +1,5 @@
+name: compmeta02
+type: module
+description: "Testing compound meta field"
+package: "Compoundmeta field"
+core_version_requirement: ^9
